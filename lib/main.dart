@@ -133,9 +133,9 @@ class _HomeState extends State<Home> {
           secondary: CircleAvatar(
             backgroundColor:
                 _todoList[index]["ok"] ? Colors.green : Colors.yellow[700],
-            child: Icon(
-              _todoList[index]["ok"] ? (Icons.check) : (Icons.error),
-              color: Colors.white,
+            child: Text(
+              _todoList[index]["ok"] ? '✅' : "🤷‍♀️",
+              style: TextStyle(fontSize: 25),
             ),
           ),
           onChanged: (c) {
